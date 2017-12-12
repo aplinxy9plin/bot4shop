@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+.mrng-60-top {
+  margin-top: 60px;
+}
+.victoria-one:hover{
+  color: white;
+}
+/* Global Button Styles */
+.animated-button:link, .animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size:14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.animated-button:link:after, .animated-button:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+.animated-button:link:hover, .animated-button:visited:hover {
+  color: #FFF;
+  text-shadow: none;
+}
+.animated-button:link:hover:after, .animated-button:visited:hover:after {
+  height: 450%;
+}
+.animated-button:link, .animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size:14px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* Victoria Buttons */
+
+.animated-button.victoria-one {
+  border: 2px solid black;
+}
+.animated-button.victoria-one:after {
+  background: black;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+body { background: #e9e9e9; color: #666666; font-family: 'RobotoDraft', 'Roboto', sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } /* Pen Title */ .pen-title { padding: 50px 0; text-align: center; letter-spacing: 2px; } .pen-title h1 { margin: 0 0 20px; font-size: 48px; font-weight: 300; } .pen-title span { font-size: 12px; } .pen-title span .fa { color: #ffcf0b; } .pen-title span a { color: #ffcf0b; font-weight: 600; text-decoration: none; } /* Rerun */ .rerun { margin: 0 0 30px; text-align: center; } .rerun a { cursor: pointer; display: inline-block; background: #ffcf0b; border-radius: 3px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); padding: 10px 20px; color: #ffffff; text-decoration: none; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; } .rerun a:hover { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); } /* Scroll To Bottom */ #codepen, #portfolio { position: fixed; bottom: 30px; right: 30px; background: #363636; width: 56px; height: 56px; border-radius: 100%; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; color: #ffffff; text-align: center; } #codepen i, #portfolio i { line-height: 56px; } #codepen:hover, #portfolio:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); } /* CodePen */ #portfolio { bottom: 96px; right: 36px; background: #ffcf0b; width: 44px; height: 44px; -webkit-animation: buttonFadeInUp 1s ease; -moz-animation: buttonFadeInUp 1s ease; animation: buttonFadeInUp 1s ease; } #portfolio i { line-height: 44px; } /* contra */ .contra { position: relative; max-width: 460px; width: 100%; margin: 0 auto 100px; } .contra.active .card:first-child { background: #f2f2f2; margin: 0 15px; } .contra.active .card:nth-child(2) { background: #fafafa; margin: 0 10px; } .contra.active .card.alt { top: 20px; right: 0; width: 100%; min-width: 100%; height: auto; border-radius: 5px; padding: 60px 0 40px; overflow: hidden; } .contra.active .card.alt .toggle { position: absolute; top: 40px; right: -70px; box-shadow: none; -webkit-transform: scale(10); -moz-transform: scale(10); -ms-transform: scale(10); -o-transform: scale(10); transform: scale(10); transition: transform .3s ease; } .contra.active .card.alt .toggle:before { content: ''; } .contra.active .card.alt .title, .contra.active .card.alt .input-contra, .contra.active .card.alt .button-contra { left: 0; opacity: 1; visibility: visible; transition: .3s ease; } .contra.active .card.alt .title { transition-delay: .3s; } .contra.active .card.alt .input-contra { transition-delay: .4s; } .contra.active .card.alt .input-contra:nth-child(2) { transition-delay: .5s; } .contra.active .card.alt .input-contra:nth-child(3) { transition-delay: .6s; } .contra.active .card.alt .button-contra { transition-delay: .7s; } /* Card */ .card { position: relative; background: #ffffff; border-radius: 5px; padding: 60px 0 40px 0; box-sizing: border-box; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); transition: .3s ease; /* Title */ /* Inputs */ /* Button */ /* Footer */ /* Alt Card */ } .card:first-child { background: #fafafa; height: 10px; border-radius: 5px 5px 0 0; margin: 0 10px; padding: 0; } .card .title { position: relative; z-index: 1; border-left: 5px solid #ffcf0b; margin: 0 0 35px; padding: 10px 0 10px 50px; color: #ffcf0b; font-size: 32px; font-weight: 600; text-transform: uppercase; } .card .input-contra { position: relative; margin: 0 60px 50px; } .card .input-contra input { outline: none; z-index: 1; position: relative; background: none; width: 100%; height: 60px; border: 0; color: #212121; font-size: 24px; font-weight: 400; } .card .input-contra input:focus ~ label { color: #9d9d9d; transform: translate(-12%, -50%) scale(0.75); } .card .input-contra input:focus ~ .bar:before, .card .input-contra input:focus ~ .bar:after { width: 50%; } .card .input-contra input:valid ~ label { color: #9d9d9d; transform: translate(-12%, -50%) scale(0.75); } .card .input-contra label { position: absolute; top: 0; left: 0; color: #757575; font-size: 24px; font-weight: 300; line-height: 60px; -webkit-transition: 0.2s ease; -moz-transition: 0.2s ease; transition: 0.2s ease; } .card .input-contra .bar { position: absolute; left: 0; bottom: 0; background: #757575; width: 100%; height: 1px; } .card .input-contra .bar:before, .card .input-contra .bar:after { content: ''; position: absolute; background: #ffcf0b; width: 0; height: 2px; transition: .2s ease; } .card .input-contra .bar:before { left: 50%; } .card .input-contra .bar:after { right: 50%; } .card .button-contra { margin: 0 60px; text-align: center; } .card .button-contra button { outline: 0; cursor: pointer; position: relative; display: inline-block; background: 0; width: 240px; border: 2px solid #e3e3e3; padding: 20px 0; font-size: 24px; font-weight: 600; line-height: 1; text-transform: uppercase; overflow: hidden; transition: .3s ease; } .card .button-contra button span { position: relative; z-index: 1; color: #ddd; transition: .3s ease; } .card .button-contra button:before { content: ''; position: absolute; top: 50%; left: 50%; display: block; background: #ffcf0b; width: 30px; height: 30px; border-radius: 100%; margin: -15px 0 0 -15px; opacity: 0; transition: .3s ease; } .card .button-contra button:hover, .card .button-contra button:active, .card .button-contra button:focus { border-color: #ffcf0b; } .card .button-contra button:hover span, .card .button-contra button:active span, .card .button-contra button:focus span { color: #ffcf0b; } .card .button-contra button:active span, .card .button-contra button:focus span { color: #ffffff; } .card .button-contra button:active:before, .card .button-contra button:focus:before { opacity: 1; -webkit-transform: scale(10); -moz-transform: scale(10); -ms-transform: scale(10); -o-transform: scale(10); transform: scale(10); } .card .footer { margin: 40px 0 0; color: #d3d3d3; font-size: 24px; font-weight: 300; text-align: center; } .card .footer a { color: inherit; text-decoration: none; transition: .3s ease; } .card .footer a:hover { color: #bababa; } .card.alt { position: absolute; top: 40px; right: -70px; z-index: 10; width: 140px; height: 140px; background: none; border-radius: 100%; box-shadow: none; padding: 0; transition: .3s ease; /* Toggle */ /* Title */ /* Input */ /* Button */ } .card.alt .toggle { position: relative; background: #ffcf0b; width: 140px; height: 140px; border-radius: 100%; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); color: #ffffff; font-size: 58px; line-height: 140px; text-align: center; cursor: pointer; } .card.alt .toggle:before { content: '\f040'; display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; transform: translate(0, 0); } .card.alt .title, .card.alt .input-contra, .card.alt .button-contra { left: 100px; opacity: 0; visibility: hidden; } .card.alt .title { position: relative; border-color: #ffffff; color: #ffffff; } .card.alt .title .close { cursor: pointer; position: absolute; top: 0; right: 60px; display: inline; color: #ffffff; font-size: 58px; font-weight: 400; } .card.alt .title .close:before { content: '\00d7'; } .card.alt .input-contra input { color: #ffffff; } .card.alt .input-contra input:focus ~ label { color: #ffffff; } .card.alt .input-contra input:focus ~ .bar:before, .card.alt .input-contra input:focus ~ .bar:after { background: #ffffff; } .card.alt .input-contra input:valid ~ label { color: #ffffff; } .card.alt .input-contra label { color: rgba(255, 255, 255, 0.8); } .card.alt .input-contra .bar { background: rgba(255, 255, 255, 0.8); } .card.alt .button-contra button { width: 100%; background: #ffffff; border-color: #ffffff; } .card.alt .button-contra button span { color: #ffcf0b; } .card.alt .button-contra button:hover { background: rgba(255, 255, 255, 0.9); } .card.alt .button-contra button:active:before, .card.alt .button-contra button:focus:before { display: none; } /* Keyframes */ @-webkit-keyframes buttonFadeInUp { 0% { bottom: 30px; opacity: 0; } } @-moz-keyframes buttonFadeInUp { 0% { bottom: 30px; opacity: 0; } } @keyframes buttonFadeInUp { 0% { bottom: 30px; opacity: 0; } } 
+  /*Navbar*/
+.navbar{
+  position: fixed;
+  z-index: 100000000000;
+  color: black;
+  opacity: 0.8;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-shadow: 0px 0px 10px #888888;
+  background-color: #ffb300;
+  overflow:hidden;
+}
+.navbar a{
+  transition: background 0.2s ease-out;
+  color: white;
+  text-decoration:none;
+}
+.rightx:hover{
+  transition:background 0.2s ease-in;
+  background-color:#fecb4e;
+}
+.rightx{
+  float:right;
+  padding:20px;
+}
+.leftx{
+  margin-top: 5px;
+  float:left;
+}
+.logo{
+  float:left;
+  padding:20px 20px;
+}
+.navbar:hover{
+  color: white;
+}
+  #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000000000;
+    top: 100px;
+    font-size: 17px;
+    right: 70px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {right: 0; opacity: 0;} 
+    to {right: 100px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right:: 100px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {right: 100px; opacity: 1;} 
+    to {right: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {right: 100px; opacity: 1;}
+    to {right: 0; opacity: 0;}
+}
+/* The side navigation menu */
+.sidenav {
+    text-align: left;
+    height: 100%; /* 100% Full-height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    background-color: #ffb300; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 80px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    color: white;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: grey;
+}
+.govno:hover, .govno:focus{
+    box-shadow: 0 0 10px rgba(255,255,255,0.5); /* Параметры тени */
+}
+.addBtn{
+    z-index: 101;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    margin-left: 250px;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.main-content{
+  margin-top: 95px;
+  margin-left: 270px;
+}
+.switch-button {background-color: white; width: 370px; height: 40px; text-align: center; position: absolute; left: 50%; top: 50%; transform: translate3D(-50%, -50%, 0); will-change: transform; z-index: 197 !important; cursor: pointer; transition: .3s ease all; border: 1px solid black; border-radius: 10px } .switch-button-case { display: inline-block; background: none; width: 49%; height: 100%; color: black; position: relative; border: none; transition: .3s ease all; text-transform: uppercase; letter-spacing: 5px; padding-bottom: 1px; } .switch-button-case:hover { color: grey; cursor: pointer; } .switch-button-case:focus { outline: none; } .switch-button .active { color: #151515; background-color: #ffcf0b; border-radius: 10px; position: absolute; left: 0; top: 0; width: 50%; height: 100%; z-index: -1; transition: .3s ease-out all; } .switch-button .active-case { color: #151515; } .signature { position: fixed; font-family: sans-serif; font-weight: 100; bottom: 10px; left: 0; letter-spacing: 4px; font-size: 10px; width: 100vw; text-align: center; color: white; text-transform: uppercase; text-decoration: none; } 
+.tour{
+  background-color: white;
+  min-height: 600px;
+  min-width: 800px;
+  max-height: 650px;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 25px;
+  top: 0px;
+}
+.pagex{
+  min-height: 550px;
+  min-width: 800px;
+  max-height: 550px;
+  max-width: 800px;
+  font-size: 1.2em;
+}
